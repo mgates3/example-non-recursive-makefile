@@ -1,0 +1,17 @@
+CC   = mpicc
+FC   = mpifort
+
+CFLAGS = -O3
+FFLAGS = -O3
+
+# BLAS & LAPACK library to link with.
+LIBS = -lopenblas
+
+# Set to 1 to compile shared library (.so).
+shared = 1
+
+# Set to 0 to avoid compiling a precision.
+# single    = 0
+# double    = 0
+# complex   = 0
+# complex16 = 0
